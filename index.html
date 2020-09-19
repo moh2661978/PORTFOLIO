@@ -16,7 +16,7 @@ API
 WORDPRESS
 BOOTSTRAP">
     <meta property="og:image" content="assets/img/SEO%20FB.png?h=b1b86a1dced02eb923a298dcdfa41412">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css?h=27f78530f462ef49e656aed10f5aaf3c">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css?h=2669a1a4ae910192456f837fde1a7c94">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
@@ -62,8 +62,23 @@ BOOTSTRAP">
             <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="https://www.guru.com/freelancers/mohamed-mahmoud-abdo" target="_blank"><i class="fa fa-xing-square fa-fw"></i></a></li>
             <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="https://www.peopleperhour.com/freelancer/mohamed-mahmoud-web-developer-vnaaxzy" target="_blank"><i class="fa fa-smile-o fa-fw"></i></a></li>
             <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="https://www.upwork.com/o/profiles/users/~01b0bb1ec647fa8cef/" target="_blank"><i class="fa fa-arrow-circle-o-up fa-fw"></i></a></li>
-        </ul>
-    </header>
+        </ul><!--
+    PeoplePerHour Profile Widget
+    The div#pph-hire me is the element
+    where the iframe will be inserted.
+    You may move this element wherever
+    you need to display the widget
+-->
+<div id="pph-hireme"></div>
+<script type="text/javascript">
+(function(d, s) {
+    var useSSL = 'https:' == document.location.protocol;
+    var js, where = d.getElementsByTagName(s)[0],
+    js = d.createElement(s);
+    js.src = (useSSL ? 'https:' : 'http:') +  '//www.peopleperhour.com/hire/445209941/4900312.js?width=300&height=135&orientation=vertical&theme=light&rnd='+parseInt(Math.random()*10000, 10);
+    try { where.parentNode.insertBefore(js, where); } catch (e) { if (typeof console !== 'undefined' && console.log && e.stack) { console.log(e.stack); } }
+}(document, 'script'));
+</script></header>
     <section id="portfolio" class="portfolio">
         <div class="container">
             <h2 class="text-uppercase text-center text-secondary">Portfolio</h2>
@@ -105,7 +120,7 @@ BOOTSTRAP">
 <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="mohamed-mahmoud-303713a"><a class="LI-simple-link" href='https://eg.linkedin.com/in/mohamed-mahmoud-303713a?trk=profile-badge' target="_blank">Mohamed Mahmoud</a></div>
 </aside></div>
             </div>
-            <div class="text-center mt-4"><a class="btn btn-outline-light btn-xl" role="button" href="https://drive.google.com/file/d/1emHvP1mRfbMEPoXwgc5-jVYYymCXk8Ya/view?usp=sharing" target="_blank"><i class="fa fa-download mr-2"></i><span>CV Download!</span></a></div>
+            <div class="text-center mt-4"><a class="btn btn-outline-light btn-xl" role="button" href="https://drive.google.com/file/d/10patIO1paShFU5ds2W7dXmOzMLopqxQ5/view?usp=sharing" target="_blank"><i class="fa fa-download mr-2"></i><span>CV Download!</span></a></div>
         </div>
     </section>
     <section id="contact">
@@ -114,7 +129,7 @@ BOOTSTRAP">
             <hr class="star-dark mb-5">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <form id="contactForm" name="sentMessage" novalidate="novalidate" method="post" action="mailto:moh2661978@gmail.com" target="_self" enctype="text/plain">
+                    <form id="contactForm" name="sentMessage" novalidate="novalidate" method="post" action="mailto:moh2661978@gmail.com">
                         <div class="control-group">
                             <div class="form-group floating-label-form-group controls mb-0 pb-2"><label>Name</label><input class="form-control" type="text" id="name" required="" placeholder="Name"><small class="form-text text-danger help-block"></small></div>
                         </div>
